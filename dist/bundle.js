@@ -38968,7 +38968,6 @@
 	
 	            var all_invoices = this.props.all_invoices;
 	
-	            console.log('this.props.all in INVOICE COMPONENT ', all_invoices);
 	            return _react2.default.createElement(
 	                'div',
 	                null,
@@ -39151,7 +39150,6 @@
 	        var _this = _possibleConstructorReturn(this, (LoginComponent.__proto__ || Object.getPrototypeOf(LoginComponent)).call(this, props));
 	
 	        _this.changeAll = function (event) {
-	            // console.log('event.target.value ', event.target.value, ' <<< ', event.target.name);
 	            _this.setState(_defineProperty({}, event.target.name, event.target.value));
 	        };
 	
@@ -39179,11 +39177,6 @@
 	    }
 	
 	    _createClass(LoginComponent, [{
-	        key: 'componentDidMount',
-	        value: function componentDidMount() {
-	            // this.props.router.push('/invoice');
-	        }
-	    }, {
 	        key: 'render',
 	        value: function render() {
 	            var _state = this.state,
@@ -39316,18 +39309,14 @@
 	        var _this = _possibleConstructorReturn(this, (MainComponent.__proto__ || Object.getPrototypeOf(MainComponent)).call(this, props));
 	
 	        _this.changeAll = function (event) {
-	            console.log('event.target.value ', event.target.value, ' <<< ', event.target.name);
 	            _this.setState(_defineProperty({}, event.target.name, event.target.value));
 	        };
 	
 	        _this.addInvoice = function () {
-	            console.log('adding invoice', _this.state);
 	            var details = _lodash2.default.pick(_this.state, ['item_name', 'item_description', 'number_of_units', 'quantity', 'unit_price', 'discount', 'tax']);
 	            var isEmptyFieldExist = false;
 	            Object.keys(details).filter(function (key) {
-	                console.log('val checking for object ', key, details[key]);
 	                if (String(details[key]).length === 0) {
-	                    console.log(' >>>>>>>>>>>> val EMPTY FIELD ', key, details[key]);
 	                    isEmptyFieldExist = true;
 	                }
 	            });
@@ -39383,6 +39372,7 @@
 	    _createClass(MainComponent, [{
 	        key: 'render',
 	        value: function render() {
+	            console.clear();
 	            var _state = this.state,
 	                item_name = _state.item_name,
 	                item_description = _state.item_description,
@@ -39391,7 +39381,6 @@
 	                unit_price = _state.unit_price,
 	                discount = _state.discount,
 	                tax = _state.tax;
-	            // console.log("sdsd", this.props.all_invoices, this.state);
 	
 	            return _react2.default.createElement(
 	                'div',
@@ -39492,7 +39481,6 @@
 	}(_react2.default.Component);
 	
 	function mapStateToProps(store) {
-	    console.log("store", store);
 	    return {
 	        all_invoices: store.invoice.all_invoices,
 	        logged_user_info: store.invoice.logged_user_info,
@@ -39545,7 +39533,6 @@
 	            var createPdf = function createPdf() {
 	                return _this2.props.createPdf(_this2.bodyRef);
 	            };
-	            console.log("this.", this.props.children);
 	            var all_invoices = this.props.all_invoices;
 	
 	            var isDisableDownload = all_invoices.length === 0;
@@ -39554,10 +39541,10 @@
 	                { className: 'pdf-container' },
 	                _react2.default.createElement(
 	                    'section',
-	                    { className: 'pdf-toolbar d-flex justify-content-around' },
+	                    { className: 'pdf-toolbar d-flex justify-content-around p-2' },
 	                    _react2.default.createElement(
 	                        'button',
-	                        { disabled: isDisableDownload, className: 'btn btn-secondary btn-sm p-2', onClick: createPdf },
+	                        { disabled: isDisableDownload, className: 'btn btn-secondary btn-sm', onClick: createPdf },
 	                        'Download Invoice PDF'
 	                    )
 	                ),
