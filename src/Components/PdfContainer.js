@@ -8,7 +8,6 @@ class PdfContainer extends React.Component {
 
     render() {
         const createPdf = () => this.props.createPdf(this.bodyRef);
-        console.log("this.",this.props.children);
         const { all_invoices } = this.props;
         const isDisableDownload = all_invoices.length === 0;
         return (

@@ -23,7 +23,6 @@ class InvoiceComponent extends Component {
 
     render() {
         const { all_invoices } = this.props;
-        console.log('this.props.all in INVOICE COMPONENT ', all_invoices);
         return (
             <div>
                 <PdfContainer

@@ -23,12 +23,7 @@ class LoginComponent extends Component {
         }
     }
 
-    componentDidMount() {
-        // this.props.router.push('/invoice');
-    }
-
     changeAll = (event) => {
-        // console.log('event.target.value ', event.target.value, ' <<< ', event.target.name);
         this.setState({ [event.target.name]: event.target.value });
     }
 
