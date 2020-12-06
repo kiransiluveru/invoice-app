@@ -4,7 +4,7 @@
   "description": "This App is useful for generating Invoices",
   "scripts": {
     "start:dev": "node webpack-server",
-    "postinstall": "webpack --config webpack.config.prod.js src/index.js -p",
+    "pos": "webpack --config webpack.config.prod.js src/index.js -p",
     "start": "node server.js",
     "lint": "eslint"
   },
