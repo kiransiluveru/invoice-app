@@ -16,7 +16,7 @@ class MainComponent extends React.Component {
             quantity: '',
             unit_price: '',
             discount: '',
-            tax: '',
+            tax: 'Service Tax',
             isEdit: false,
             currentEditingId: '',
         }
@@ -58,7 +58,7 @@ class MainComponent extends React.Component {
         }
         this.setState({
             item_name: '', item_description: '', number_of_units: '', quantity: '', unit_price: '', discount: '',
-            tax: '', isEdit: false, currentEditingId: ''
+            tax: 'Service Tax', isEdit: false, currentEditingId: ''
         });
     }
 

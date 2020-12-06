@@ -8,7 +8,6 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
-        new webpack.HotModuleReplacementPlugin()
     ],
   module: {
     loaders: [
@@ -34,4 +33,7 @@ module.exports = {
       modules: ['node_modules']
   }
   },
+  node: {
+    fs: "empty"
+}
 }

@@ -48,7 +48,8 @@ class LoginComponent extends Component {
         const { email, password, isUserLoggedIn } = this.state;
         return (
             <div>
-                <h1 className="d-flex justify-content-center"> SIGN IN </h1>
+                <h1 className="d-flex justify-content-center"> Invoice App </h1>
+                <h2 className="d-flex justify-content-center"> SignIn </h2>
                 <div style={{backgroundColor:'aliceblue',width: "35%"}} className="container d-flex justify-content-center border border-primary p-5 rounded">
                     <form className="">
                         <div className="form-group">

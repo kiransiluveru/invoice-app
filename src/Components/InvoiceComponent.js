@@ -28,6 +28,7 @@ class InvoiceComponent extends Component {
             <div>
                 <PdfContainer
                     createPdf={this.createPdf}
+                    all_invoices={all_invoices}
                 >
                     <div className="container">
                         <h2> INVOICE </h2>

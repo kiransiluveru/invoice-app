@@ -38,4 +38,7 @@ module.exports = {
       modules: ['node_modules']
   }
   },
+  node: {
+    fs: "empty"
+}
 }
