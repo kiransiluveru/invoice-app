@@ -5,8 +5,7 @@
   "scripts": {
     "start:dev": "node webpack-server",
     "pos": "webpack --config webpack.config.prod.js src/index.js -p",
-    "start": "webpack --config webpack.config.prod.js src/index.js -p && npm run server",
-    "server":"node server.js",
+    "start": "node server.js",
     "lint": "eslint"
   },
   "author": "Siluveru Kiran Kumar",
