@@ -1,0 +1,49 @@
+{
+  "name": "invoice-app",
+  "version": "1.0.0",
+  "description": "This App is useful for generating Invoices",
+  "scripts": {
+    "start:dev": "node webpack-server",
+    "postinstall": "webpack --config webpack.config.prod.js src/index.js -p",
+    "start": "node server.js",
+    "lint": "eslint"
+  },
+  "author": "Siluveru Kiran Kumar",
+  "license": "MIT",
+  "dependencies": {
+    "@progress/kendo-drawing": "^1.5.7",
+    "@progress/kendo-react-pdf": "^2.0.0",
+    "babel-core": "^6.23.1",
+    "bootstrap": "^4.3.1",
+    "css-loader": "^5.0.1",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-loader": "^2.4.5",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "redux": "^3.5.2",
+    "redux-reset": "^0.2.0",
+    "style-loader": "^2.0.0",
+    "uuid-random": "^1.3.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.7",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.4.5",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^17.0.2",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^5.12.1",
+    "json-loader": "^0.5.7",
+    "react-hot-loader": "^1.3.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1"
+  }
+}
