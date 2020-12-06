@@ -2,7 +2,7 @@ var path = require("path")
 var webpack = require("webpack")
 module.exports = {
   entry:[ "./src/index.js",
-      'webpack-dev-server/client?http://0.0.0.0:3000', //hot loader 
+      'webpack-dev-server/client?http://0.0.0.0:9000', //hot loader 
       'webpack/hot/dev-server'  //hot loader
     ],
   output: {
